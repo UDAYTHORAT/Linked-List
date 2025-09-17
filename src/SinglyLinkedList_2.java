@@ -79,7 +79,6 @@ public class SinglyLinkedList_2
 
 	}
 	//Delete in the range -->
-	// Delete in the range -->
 	void DeleteinRange(int from, int to) {
 		if (head == null) return;
 
