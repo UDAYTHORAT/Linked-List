@@ -84,7 +84,7 @@ public class Singly_Linked_List
 	}
 
 
-	//Display the all Nodes -->
+	//Display  all Nodes -->
 	void Display(){
 		Node current =head;
 		while (current!= null){
@@ -131,15 +131,6 @@ public class Singly_Linked_List
 		System.out.println("Delete --> (first) & (is) ");
 		list.DeleteANode("first");
 		list.DeleteANode("is");
-
-
-
-
-
-
-
-
-
 		list.Display();
 	}
 
