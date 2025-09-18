@@ -10,7 +10,7 @@ public class Reverse_a_Linked_List
 	}
 }
 class Reverse{
-	Reverse_a_Linked_List head ;
+	public Reverse_a_Linked_List head ;
 
 	void Insert (int data){
 		Reverse_a_Linked_List newNode =new Reverse_a_Linked_List(data);
@@ -55,6 +55,24 @@ class Reverse{
 
 	}
 
+
+	//Using Recursion-->
+	Reverse_a_Linked_List ReverseRecursion(Reverse_a_Linked_List head){
+
+		if(head==null || head.next==null){
+			return head;
+		}
+
+		Reverse_a_Linked_List Head = ReverseRecursion(head.next);
+		head.next.next=head;
+		head.next=null;
+
+		return Head;
+
+
+	}
+
+
 	public static void main(String[] args)
 	{
 		Reverse l = new Reverse();
@@ -63,7 +81,12 @@ class Reverse{
 		l.Insert(3);
 		l.Insert(4);
 		l.Display();
-		l.reverse();
+//		l.reverse();
+		System.out.println(l.head.data);
 		l.Display();
+
+		l.head =l.ReverseRecursion(l.head);
+		l.Display();
+		System.out.println(l.head.data);
 	}
 }
