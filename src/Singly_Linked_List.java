@@ -13,7 +13,7 @@ public class Singly_Linked_List
 {
 	Node head;
 
-	//Insert at  start -->
+	//InsertFirst at  start -->
 	void InsertAtStart(String data){
 		Node newNode =new Node(data);
 		if(head==null){
@@ -24,7 +24,7 @@ public class Singly_Linked_List
 		head=newNode;
 	}
 
-	//Insert at the Last -->
+	//InsertFirst at the Last -->
 	void InsertAtLast(String data){
 		Node newNode = new Node(data);
 		Node current =head;
@@ -41,7 +41,7 @@ public class Singly_Linked_List
 	}
 
 
-	//Insert at between -->
+	//InsertFirst at between -->
 
 	void InsertAtBetween(String data, String node){
 
@@ -104,13 +104,13 @@ public class Singly_Linked_List
 		list.Display();
 
 		//insert at the start-->
-		System.out.println("Insert at first");
+		System.out.println("InsertFirst at first");
 		list.InsertAtStart("My");
 		list.Display();
 		System.out.println("------------------");
 
 		//insert at last-->
-		System.out.println("Insert at last");
+		System.out.println("InsertFirst at last");
 		list.InsertAtLast("name");
 		list.InsertAtLast("Uday");
 		list.Display();

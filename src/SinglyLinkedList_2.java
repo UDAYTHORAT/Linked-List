@@ -14,7 +14,7 @@ class  Node1{
 public class SinglyLinkedList_2
 {
 	Node1 head;
-	//Insert at first -->
+	//InsertFirst at first -->
 	void InsertFirst(int data){
 		Node1 newNode = new Node1(data);
 		Node1 current = head;
@@ -26,7 +26,7 @@ public class SinglyLinkedList_2
 		head=newNode;
 
 	}
-	//Insert at last-->
+	//InsertFirst at last-->
 	void InsertLast(int data){
 		Node1 current =head;
 		Node1 newNode =new Node1(data);
@@ -44,7 +44,7 @@ public class SinglyLinkedList_2
 
 	}
 
-	//Insert in between-->
+	//InsertFirst in between-->
 	void InsertBetweenBefore(int data, int LastNode){
 		Node1 current =head;
 		Node1 pre =head;
